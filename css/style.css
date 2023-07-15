@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #fafafa;
+}
+
+header{
+    /*width: 100%;
+    height: 40px;
+    background-color: rgba(125, 216, 234, 0.482);*/
+
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    background-color: #4b4b4b;
+    padding: 10px;
+    position: relative;
+}
+
+header #left{
+    position: absolute;
+    left: 10px;
+    line-height: 30px;
+    color: whitesmoke;
+}
+
+header #right{
+    position: absolute;
+    right: 10px;
+    line-height: 30px;
+    color: whitesmoke;
+}
+
+.header .logo{
+    /*margin-left: 100px;
+    width: 100%;
+    height: 90px;
+    text-align: center;
+    align-items: center;*/
+
+    text-align: center;
+}
+
+.header .logo img{
+    /*align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    width: 80px;
+    height: 80px;*/
+
+    width: 100px;
+    height: 100px;
+}
+
+.subject{
+    margin: 100px auto;
+    width: 70%;
+    padding: 20px;
+}
+
+.subject .subject-code .card{
+    margin-top: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    overflow: scroll;
+}
+
+.subject .subject-code .card .top{
+    width: 100%;
+    height: 40px;
+    background-color: #4b4b4b;
+    border-radius: 10px 10px 0 0;
+}
+
+.subject .subject-code .card .top .container{
+    width: 98%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.subject .subject-code .card .top .container .text{
+    font-size: 17px;
+    color: white;
+    margin-left: 20px;
+    line-height: 40px;
+}
+
+.subject .subject-code .card .top .container .right{
+    display: flex;
+}
+
+.subject .subject-code .card .top .container .right .icon i{
+    color: white;
+    line-height: 40px;
+}
+
+.subject .subject-code .card .bottom{
+    width: 100%;
+    min-height: 500px;
+    background-color: #000000;
+    border-radius: 0px 0px 2px 2px;
+
+}
+
+.subject .subject-code .card .bottom .container{
+    background-color: #000000;
+    font-size: 16px;
+    width: 100%;
+    color: white;
+}
+
+.subject .subject-code .card .bottom .container pre{
+    background-color: #000000;
+}
+
+.subject .subject-code .card .bottom .container code{
+    background-color: #000000;
+}
+
+span{
+    color: #528A3E;
+}
+
+@media screen and (max-width: 768px){
+    .subject{
+        width: 98%;
+    }
+
+    .subject .subject-code .card .top .container .text{
+        font-size: 13px;
+    }
+
+    .subject .subject-code .card .bottom .container{
+        font-size: 5px;
+    }
+
+    h2{
+        font-size: 20px;
+    }
+}
+
+/*
