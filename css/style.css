@@ -123,9 +123,85 @@ header #right{
     background-color: #000000;
 }
 
-span{
+.subject .subject-content{
+    margin-top: 50px;
+    /*width: 100%;*/
+}
+
+.subject .subject-content .row{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.subject .subject-content .row .text{
+    margin-left: 20px;
+    line-height: 20px;
+    font-size: 16px;
+    width: 80%;
+}
+
+.yesil{
     color: #528A3E;
 }
+
+.kirmizi{
+    color: #D25252;
+}
+
+.sari{
+    color: #D2B252;
+}
+
+.mavi{
+    color: #528A9E;
+}
+
+.turuncu{
+    color: #D27E52;
+}
+
+.yesil-daire{
+    width: 20px;
+    height: 20px;
+    background-color: #528A3E;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.kirmizi-daire{
+    width: 20px;
+    height: 20px;
+    background-color: #D25252;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.sari-daire{
+    width: 20px;
+    height: 20px;
+    background-color: #D2B252;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.mavi-daire{
+    width: 20px;
+    height: 20px;
+    background-color: #528A9E;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.turuncu-daire{
+    width: 20px;
+    height: 20px;
+    background-color: #D27E52;
+    border-radius: 50%;
+    display: inline-block;
+}
+
 
 @media screen and (max-width: 768px){
     .subject{
@@ -142,6 +218,10 @@ span{
 
     h2{
         font-size: 20px;
+    }
+
+    .subject .subject-content .row .text{
+        font-size: 13px;
     }
 }
 

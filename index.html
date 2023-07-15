@@ -45,15 +45,20 @@
 
 <pre>
     <code>
+    <span class="yesil">
     int verilecek = 0, miktar = 0, para200 = 0, para100 = 0, para50 = 0, para20 = 0, para10 = 0, para5 = 0;
     int banka200 = 10, banka100 = 4, banka50 = 5, banka20 = 20, banka10 = 10, banka5 = 1000;
+    </span>
+    <span class="turuncu">
     Console.WriteLine("Merhabalar");
     Console.WriteLine("YALÇINBANK a hoş geldiniz.");
     Console.WriteLine("--------------------------");
     Console.WriteLine("Bankamızdan 5 ve 5 in katı para birimi çekebilirsiniz.");
-                        
+    </span>
+    <span class="yesil">                    
     int butce = banka200 * 200 + banka100 * 100 + banka50 * 50 + banka20 * 20 + banka10 * 10 + banka5 * 5;
-                        
+    </span>
+    <span class="mavi">                    
     do
     {
         Console.Write("Lütfen miktarı giriniz.\nMiktar: ");
@@ -61,8 +66,9 @@
         if (butce < miktar)
             Console.WriteLine("Paramız bitti. Daha düşük bir miktar giriniz.");
     } while (miktar < 5 || miktar % 5 != 0 || butce < miktar);
-    verilecek = miktar;
-                        
+    </span>
+    <span class="yesil">verilecek = miktar;</span>
+    <span class="kirmizi">                    
     do
     {
         if (miktar >= 200 && banka200 > 0)
@@ -103,8 +109,8 @@
         }
                         
     } while (miktar >= 5);
-                        
-                        
+    </span>                    
+    <span class="sari">                    
     Console.WriteLine("Talep ettiniz : " + verilecek + "TL");
     if (para200 > 0)
         Console.WriteLine("200TL x " + para200);
@@ -118,77 +124,6 @@
         Console.WriteLine("10TL x " + para10);
     if (para5 > 0)
         Console.WriteLine("5TL x " + para5);
-    </code>
-</pre>
-                        
-<pre>
-    <code>
-    <span>
-    /*int verilecek = 0, miktar = 0, para200 = 0, para100 = 0, para50 = 0, para20 = 0, para10 = 0, para5 =0;
-                        
-    Console.WriteLine("Merhabalar");
-    Console.WriteLine("YALÇINBANK a hoş geldiniz.");
-    Console.WriteLine("--------------------------");
-    Console.WriteLine("Bankamızdan 5 ve 5 in katı para birimi çekebilirsiniz.");
-                        
-    do
-    {
-        Console.Write("Lütfen miktarı giriniz.\nMiktar: ");
-        miktar = Convert.ToInt32(Console.ReadLine());
-    } while (miktar<5 || miktar%5!=0);
-    verilecek = miktar;
-                        
-    do
-    {
-        if (miktar >= 200)
-        {
-            para200 ++;
-            miktar -= 200;
-        }
-        else if (miktar >= 100)
-        {
-            para100 ++;
-            miktar -= 100;
-        }
-        else if (miktar >= 50)
-        {
-            para50++;
-            miktar -= 50;
-        }
-        else if (miktar >= 20)
-        {
-            para20 ++;
-            miktar -= 20;
-        }
-        else if (miktar >= 10)
-        {
-            para10 ++;
-            miktar -= 10;
-        }
-        else if (miktar >= 5)
-        {
-            para5 ++;
-            miktar -= 5;
-        }
-                        
-    } while (miktar >= 5);
-                        
-                        
-    Console.WriteLine("Talep ettiniz : " + verilecek + "TL");
-    if (para200>0)
-        Console.WriteLine("200x"+para200);
-
-    if (para100 > 0)
-        Console.WriteLine("100x" + para100);
-    if (para50 > 0)
-        Console.WriteLine("50x" + para50);
-    if (para20 > 0)
-        Console.WriteLine("20x" + para20);
-    if (para10 > 0)
-        Console.WriteLine("10x" + para10);
-    if (para5 > 0)
-        Console.WriteLine("5x" + para5);
-    */
     </span>
     </code>
 </pre>
@@ -199,7 +134,36 @@
             </div>
         </div>
         <div class="subject-content">
-
+            <div class="row">
+                <div class="yesil-daire"></div>
+                <div class="text">
+                    Programda kullanılanacak değişkenler tanımlandı ve bankadaki para miktarları belirlendi.
+                </div>
+            </div>
+            <div class="row">
+                <div class="turuncu-daire"></div>
+                <div class="text">
+                    Kullanıcı karşılandı, kullanıcıya 5 ve 5 in katı olacak şekilde miktar girmesi gerektiğinin bilgisi verildi.
+                </div>
+            </div>
+            <div class="row">
+                <div class="mavi-daire"></div>
+                <div class="text">
+                    Kullanıcıdan alınan miktarın 5 ve 5 in katı olup olmadığı kontrol edildi. Eğer 5 ve 5 in katı değilse ve bankadaki para miktarı kullanıcıdan alınan miktarı karşılayamıyorsa kullanıcıdan tekrar miktar istendi.
+                </div>
+            </div>
+            <div class="row">
+                <div class="kirmizi-daire"></div>
+                <div class="text">
+                    Kullanıcıdan alınan miktar bankadaki para miktarı ile karşılanabiliyorsa kullanıcıya verilecek para miktarı hesaplandı.
+                </div>
+            </div>
+            <div class="row">
+                <div class="sari-daire"></div>
+                <div class="text">
+                    Kullanıcıya verilecek para miktarı ekrana yazdırıldı.
+                </div>
+            </div>
         </div>
     </div>
 
