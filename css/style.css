@@ -63,6 +63,7 @@ header #right{
     margin: 100px auto;
     width: 70%;
     padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .subject .subject-code .card{
@@ -102,7 +103,6 @@ header #right{
 
 .subject .subject-code .card .bottom{
     width: 100%;
-    min-height: 500px;
     background-color: #000000;
     border-radius: 0px 0px 2px 2px;
 
