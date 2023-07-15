@@ -139,7 +139,7 @@ header #right{
     margin-left: 20px;
     line-height: 20px;
     font-size: 16px;
-    width: 80%;
+    width: 98%;
 }
 
 .yesil{
@@ -222,7 +222,9 @@ header #right{
 
     .subject .subject-content .row .text{
         font-size: 13px;
+        width: 80%;
     }
+
 }
 
 /*
