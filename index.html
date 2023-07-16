@@ -169,6 +169,326 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="subject">
+        <div class="subject-header">
+            <h2>Sayı Tahmin Oyunu</h2>
+        </div>
+        <div class="subject-code">
+            <div class="card">
+                <div class="top">
+                    <div class="container">
+                        <div class="left">
+                            <div class="text">html</div>
+                        </div>
+                        <div class="right">
+                            <div class="icon">
+                                <i class="fa-regular fa-clipboard"></i>
+                            </div>
+                            <div id="copy-button" style="margin-left: 10px;" class="text">
+                                copy code
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="container">
+
+<pre>
+    <code>
+    <span class="yesil">
+    int tahmin = new Random().Next(1, 100);
+    int sayi = 0,hak = 5;
+    </span>
+    <span class="mavi">
+    do
+    {
+    </span>
+    <span class="turuncu">
+        do
+        {
+            Console.Write("Bir sayi giriniz : ");
+            sayi = Convert.ToInt32(Console.ReadLine());
+            if(sayi==999)
+                Console.WriteLine("tahmin : " + tahmin);
+            if (sayi == 9999)
+                hak = 100;
+
+            if (sayi < 0 || sayi > 100)
+                Console.WriteLine("Lütfen 1 ile 100 arasında değer giriniz");
+        } while (sayi < 0 || sayi > 100);
+
+    </span>
+    <span class="kirmizi">                    
+        if(sayi==tahmin)
+        {
+            Console.Write("Tebrikler " + (5 - hak) + ". hakkınızda bildiniz");
+            break; // Döngüden çık
+        }
+        else
+        {
+            hak--;
+            if (tahmin > sayi)
+                Console.WriteLine("Yukarı");
+            else
+                Console.WriteLine("Aşağı"); 
+        }
+    </span>
+    <span class="mavi">
+    } while (hak>0);
+    </span>                   
+    <span class="sari">                    
+    if (hak == 0)
+    Console.WriteLine("Game Over. Tahmin edilen sayi : " + tahmin);
+    </span>
+    </code>
+</pre>
+                        
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="subject-content">
+            <div class="row">
+                <div class="yesil-daire"></div>
+                <div class="text">
+                    Programda kullanılanacak değişkenler tanımlandı ve tahmin edilecek sayı belirlendi.
+                </div>
+            </div>
+            <div class="row">
+                <div class="turuncu-daire"></div>
+                <div class="text">
+                    Kullanıcıdan 1 ile 100 arasında bir sayı girmesi istendi. Eğer kullanıcı 9999 girerse kullanıcıya 100 hakkı verildi. Eğer kullanıcı 999 girerse tahmin edilecek sayı ekrana yazdırıldı. Eğer kullanıcı 1 ile 100 arasında bir sayı girmezse kullanıcıya uyarı verildi.
+                </div>
+            </div>
+            <div class="row">
+                <div class="kirmizi-daire"></div>
+                <div class="text">
+                    Kullanıcıdan alınan sayı tahmin edilecek sayı ile karşılaştırıldı. Eğer tahmin edilecek sayı ile kullanıcıdan alınan sayı aynı ise kullanıcıya tebrik mesajı verildi ve döngüden çıkıldı. Eğer tahmin edilecek sayı ile kullanıcıdan alınan sayı aynı değilse kullanıcıya yukarı veya aşağı uyarısı verildi.
+                </div>
+            </div>
+            <div class="row">
+                <div class="mavi-daire"></div>
+                <div class="text">
+                    Kullanıcının hakkı 0 olana kadar kullanıcıdan sayı istendi.
+                </div>
+            </div>
+            <div class="row">
+                <div class="sari-daire"></div>
+                <div class="text">
+                    Eğer kullanıcının hakkı 0 olursa kullanıcıya game over mesajı verildi.
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="subject">
+        <div class="subject-header">
+            <h2>Sayısal Loto</h2>
+        </div>
+        <div class="subject-code">
+            <div class="card">
+                <div class="top">
+                    <div class="container">
+                        <div class="left">
+                            <div class="text">html</div>
+                        </div>
+                        <div class="right">
+                            <div class="icon">
+                                <i class="fa-regular fa-clipboard"></i>
+                            </div>
+                            <div id="copy-button" style="margin-left: 10px;" class="text">
+                                copy code
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="container">
+
+<pre>
+    <code>
+    <span class="yesil">
+    int adet = 6;
+    int[] dizi = new int[adet];
+    Random r = new Random();
+    </span>
+    <span class="sari">
+    for (int i = 0; i < adet; i++)
+    {
+        dizi[i] = r.Next(1, 49);
+        for (int j = 0; j < i; j++)
+        {
+            if (dizi[i] == dizi[j])
+            {
+                i--;
+                break;
+            }
+                
+        }
+    }
+
+    </span>
+    <span class="mavi">                    
+    for (int i = 0; i < adet; i++)
+    {
+        Console.WriteLine(dizi[i]);
+    }
+    </span>
+    </code>
+</pre>
+                        
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="subject-content">
+            <div class="row">
+                <div class="yesil-daire"></div>
+                <div class="text">
+                    Değişkenler tanımlandı ve random sınıfı tanımlandı.
+                </div>
+            </div>
+            <div class="row">
+                <div class="sari-daire"></div>
+                <div class="text">
+                    Diziye random sayılar atandı ve aynı sayı gelirse döngüden çıkıldı.
+                </div>
+            </div>
+            <div class="row">
+                <div class="mavi-daire"></div>
+                <div class="text">
+                    Dizi ekrana yazdırıldı.
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="subject">
+        <div class="subject-header">
+            <h2>Dışarıdan girilen 10 tane sayıyı ters sıra ile ekrana yazdıran program</h2>
+        </div>
+        <div class="subject-code">
+            <div class="card">
+                <div class="top">
+                    <div class="container">
+                        <div class="left">
+                            <div class="text">html</div>
+                        </div>
+                        <div class="right">
+                            <div class="icon">
+                                <i class="fa-regular fa-clipboard"></i>
+                            </div>
+                            <div id="copy-button" style="margin-left: 10px;" class="text">
+                                copy code
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="container">
+
+<pre>
+    <code>
+    <span class="yesil">
+    int adet = 10;
+    int[] dizi = new int[adet];
+    </span>
+    <span class="sari">
+    for (int i = 0; i < adet; i++)
+    {
+        Console.Write("sayi : ");
+        dizi[i] = Convert.ToInt32(Console.ReadLine());
+    }
+    </span>
+    <span class="mavi">                    
+    for (int i = adet-1; i >=0; i--)
+    {
+        Console.Write(dizi[i] + ",");
+    }
+    </span>
+    </code>
+</pre>
+                        
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="subject-content">
+            <div class="row">
+                <div class="yesil-daire"></div>
+                <div class="text">
+                    Değişken atandı 10 elemanlı bir dizi tanımlandı.
+                </div>
+            </div>
+            <div class="row">
+                <div class="sari-daire"></div>
+                <div class="text">
+                    Kullanıcıdan 10 tane sayı alındı ve diziye atandı.
+                </div>
+            </div>
+            <div class="row">
+                <div class="mavi-daire"></div>
+                <div class="text">
+                    Kullanıcıdan alınan sayılar tersten ekrana yazdırıldı.
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script src="js/script.js"></script>
 </body>
