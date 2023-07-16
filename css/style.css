@@ -231,6 +231,42 @@ header #right{
 }
 
 
+footer{
+    background-color: black;
+    opacity: 0.9;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+footer .container p{
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    align-items: center;
+    line-height: 30px;
+    word-spacing: 2px;
+}
+
+footer .container .media{
+    font-size: 16px;
+    align-items: center;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+footer .container .media a{
+    text-decoration: none;
+    color: white;
+    transition: 0.5s all;
+}
+
+footer .container .media a:hover{
+    color: #bababa;
+}
+
+
 /* TOP BUTTON */
 
 .top-arrow{
