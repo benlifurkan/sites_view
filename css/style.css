@@ -99,30 +99,35 @@ header #right{
 .subject .subject-code .card .top .container .right button{
     background-color: unset;
     border: unset;
+    cursor: pointer;
 }
 
 #copybutton1text{
     font-size: 15px;
     transition: all 1s;
     display: none;
+    cursor: pointer;
 }
 
 #copybutton2text{
     font-size: 15px;
     transition: all 1s;
     display: none;
+    cursor: pointer;
 }
 
 #copybutton3text{
     font-size: 15px;
     transition: all 1s;
     display: none;
+    cursor: pointer;
 }
 
 #copybutton4text{
     font-size: 15px;
     transition: all 1s;
     display: none;
+    cursor: pointer;
 }
 
 .subject .subject-code .card .top .container .right .icon i{
