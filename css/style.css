@@ -69,7 +69,6 @@ header #right{
 .subject .subject-code .card{
     margin-top: 50px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    overflow: scroll;
 }
 
 .subject .subject-code .card .top{
@@ -96,6 +95,35 @@ header #right{
     display: flex;
 }
 
+.subject .subject-code .card .top .container .right button{
+    background-color: unset;
+    border: unset;
+}
+
+#copybutton1text{
+    font-size: 15px;
+    transition: all 1s;
+    display: none;
+}
+
+#copybutton2text{
+    font-size: 15px;
+    transition: all 1s;
+    display: none;
+}
+
+#copybutton3text{
+    font-size: 15px;
+    transition: all 1s;
+    display: none;
+}
+
+#copybutton4text{
+    font-size: 15px;
+    transition: all 1s;
+    display: none;
+}
+
 .subject .subject-code .card .top .container .right .icon i{
     color: white;
     line-height: 40px;
@@ -105,7 +133,7 @@ header #right{
     width: 100%;
     background-color: #000000;
     border-radius: 0px 0px 2px 2px;
-
+    overflow: scroll;
 }
 
 .subject .subject-code .card .bottom .container{
@@ -203,6 +231,55 @@ header #right{
 }
 
 
+/* TOP BUTTON */
+
+.top-arrow{
+    position: relative;
+}
+
+.top-arrow .button{
+    display: inline-block;
+    /*background-color: #FF9800;*/
+    background-color: #4f4f4f;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    margin: 30px;
+    position: fixed;
+    bottom: 2px;
+    right: 2px;
+    transition: background-color .3s;
+    z-index: 1000;
+    transition: all , 0.5s;
+    display: none;
+}
+
+.top-arrow .button:hover{
+    cursor: pointer;
+    background-color: #333;
+}
+
+.top-arrow .button:active{
+    background-color: #555;
+}
+
+
+.top-arrow .button i{
+    color: white;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.top-arrow .button .show{
+    opacity: 1;
+    visibility: visible;
+}
+
+
 @media screen and (max-width: 768px){
     .subject{
         width: 98%;
@@ -212,8 +289,24 @@ header #right{
         font-size: 13px;
     }
 
+    .subject .subject-code .card .top .container #copybutton1text{
+        font-size: 13px;
+    }
+
+    .subject .subject-code .card .top .container #copybutton2text{
+        font-size: 13px;
+    }
+
+    .subject .subject-code .card .top .container #copybutton3text{
+        font-size: 13px;
+    }
+
+    .subject .subject-code .card .top .container #copybutton4text{
+        font-size: 13px;
+    }
+
     .subject .subject-code .card .bottom .container{
-        font-size: 5px;
+        font-size: 10px;
     }
 
     h2{
@@ -226,5 +319,3 @@ header #right{
     }
 
 }
-
-/*
